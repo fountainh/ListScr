@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    
+    android:padding="6dip" >
+ 
+    <TextView
+        android:id="@+id/textBidProjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <TextView
+        android:id="@+id/textBidJobId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textBidProjectTitle"
+        android:layout_below="@+id/textBidProjectTitle"
+        android:text="jobId: "/>
+    
+    <TextView
+        android:id="@+id/textBidCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textBidBudget"        
+        android:text="(C)"/>
+    
+    <TextView
+        android:id="@+id/textBidBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textBidProjectTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:text="Budget" />
+ 
+</RelativeLayout>

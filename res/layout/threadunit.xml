@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+ 
+    <TextView
+        android:id="@+id/textthreadProjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+        <TextView
+        android:id="@+id/textthreadSenderDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textthreadProjectTitle"
+        android:layout_below="@+id/textthreadProjectTitle"
+        android:layout_marginTop="24dp"
+        android:text="Sender: " />
+        
+         <TextView
+        android:id="@+id/textthreadReceiverDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadSenderDesc"
+        android:layout_alignLeft="@+id/textthreadSenderDesc"    
+        android:text="Receiver:" />
+        
+        
+
+    <TextView
+        android:id="@+id/textthreadReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadSender"
+        android:layout_alignLeft="@+id/textthreadSender"         
+        android:text="Receiv" />
+
+    <TextView
+        android:id="@+id/textthreadtimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textthreadProjectTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:text="timestamp" />
+
+    <TextView
+        android:id="@+id/textthreadSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textthreadSenderDesc"
+        android:layout_below="@+id/textthreadProjectTitle"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:text="Send" />
+    
+    <TextView
+            android:id="@+id/textthreadDline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textthreadReceiverDesc"
+            android:text="------------------------------------------" />
+    
+    
+    
+        <TextView
+        android:id="@+id/textthreadBudgetDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadDline1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textthreadReceiverDesc"
+        android:text="Budget: " />
+        
+    
+    
+    <TextView
+        android:id="@+id/textthreadBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadDline1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textthreadBudgetDesc"
+        android:text="bud" />
+ 
+     <TextView
+        android:id="@+id/textthreadECDDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadBudgetDesc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textthreadReceiverDesc"
+        android:text="ECD: " />
+
+    
+    
+    <TextView
+        android:id="@+id/textthreadECD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadBudgetDesc"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textthreadECDDesc"
+        android:text="ecd" />
+    
+    
+    <TextView
+            android:id="@+id/textthreadDline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textthreadECDDesc"
+            android:paddingTop="10dp"
+            android:text="------------------------------------------" />
+    
+    
+    
+        <TextView
+        android:id="@+id/textthreadSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textthreadDLine2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/textthreadSenderDesc"
+        android:text="Summary" />
+    
+    
+    
+</RelativeLayout>

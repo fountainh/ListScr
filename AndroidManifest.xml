@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.listscr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="App Trader"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.listscr.JobListings"
+            android:label="App Trader" >                   
+        </activity>
+        <activity android:name="mainmenu" android:label="App Trader">
+             <intent-filter>               
+            </intent-filter>
+        </activity>
+        <activity android:name="JobPostings" android:label="App Trader">           
+        </activity>
+        <activity android:name="BidListings">                                     
+         </activity>
+        <activity android:name="BidPostings"></activity>
+        <activity android:name="loginpage"></activity><activity android:name="BidThread"></activity>
+        
+        <activity android:name="profilebuilder"></activity>
+        <activity android:name="registrationpage" android:launchMode="singleInstance">
+        </activity>        
+        <activity android:name=".LITestActivity" android:label="LinkedInProfile"
+			android:launchMode="singleInstance">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="x-oauthflow-linkedin" android:host="litestcalback" />
+			</intent-filter>
+		</activity>
+        
+    </application>
+</manifest>

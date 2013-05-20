@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="FirstName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/firstName"
+            android:paddingLeft="16dp"
+            android:text="LastName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/HeadLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstName"
+            android:layout_below="@+id/lastName"            
+            android:text="HeadLine" />
+
+        <TextView
+            android:id="@+id/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstName"
+            android:layout_below="@+id/HeadLine"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/Industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HeadLine"
+            android:layout_toRightOf="@+id/Location"
+            android:paddingLeft="16dp"
+            android:paddingBottom="20dp"
+            android:text="Industry" />
+
+
+        <TextView
+            android:id="@+id/ProfileURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Location"
+            android:layout_below="@+id/Industry"
+            android:text="ProfileURL" />
+
+        <TextView
+            android:id="@+id/Experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ProfileURL"
+            android:layout_below="@+id/ProfileURL"
+            android:paddingTop="15dp"
+            android:text="Experience"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LiTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Experience"
+            android:layout_below="@+id/Experience"
+            android:paddingTop="5dp"
+            android:textSize = "15sp" 
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LiCompany1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Experience"
+            android:layout_toRightOf="@+id/LiTitle1"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize = "15sp"
+            android:text="Company"
+             />
+
+   
+
+        <TextView
+            android:id="@+id/LiDescription1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LiTitle1"
+            android:layout_below="@+id/LiTitle1"
+            android:textSize = "12sp" 
+            android:text="Description" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nLayout"
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="50dp"
+        android:layout_alignTop="@+id/L1"
+        android:layout_toRightOf="@+id/L1"
+        android:orientation="vertical" >
+
+           <EditText
+            android:id="@+id/textloginUserName"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" >            
+        </EditText>
+        <EditText
+            android:id="@+id/textloginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/L3"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/L1"
+    android:layout_alignLeft="@+id/L1"
+    android:paddingLeft="60dp"
+    android:orientation="vertical" >
+    <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                       
+            android:text="Login" />
+      <TextView
+            android:id="@+id/textloginDash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="------------------------------------------" />
+      <TextView
+            android:id="@+id/texxtloginMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Don't have an App Trader Account ?" />
+      <Button
+            android:id="@+id/textButtonCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                       
+            android:text="Create An Account" />
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingTop="50dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:text="User Name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="30dp"
+            android:text="Password" />
+
+    </LinearLayout>
+    
+</RelativeLayout>
+
+    

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nLayout"
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     
+   
+<LinearLayout
+    android:id="@+id/L1"
+    android:layout_width="160dp"
+    android:layout_height="180dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:text="full name" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:paddingTop="15dp"
+        android:paddingLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:text="email" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp"
+        android:paddingLeft="50dp"
+        android:text="password" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="16dp"
+        android:text="confirm pasword" />
+    
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignTop="@+id/L1"
+        android:layout_toRightOf="@+id/L1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/textloginFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp" />
+
+           <EditText
+               android:id="@+id/textloginChosenUserName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textPersonName"
+               android:textSize="12sp"
+               android:paddingLeft="40dp"
+               >
+
+               <requestFocus />
+           </EditText>
+
+        <EditText
+            android:id="@+id/textloginEmail"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/textloginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/textloginConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"            
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/L3"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:paddingLeft="100dp"
+    android:layout_below="@+id/L1"
+    android:orientation="vertical" >
+    <Button
+            android:id="@+id/buttonloginRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:layout_alignLeft="@+id/datePicker1"
+            android:layout_below="@+id/datePicker1"
+            android:text="Register" />
+    </LinearLayout>
+</RelativeLayout>
+
+    
